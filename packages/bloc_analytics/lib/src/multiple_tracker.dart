@@ -1,6 +1,7 @@
 import 'analytics_event.dart';
 import 'tracker.dart';
 
+/// A tracker that allow you to use different services at once
 class MultipleTracker implements Tracker {
   const MultipleTracker(this.trackers);
 
