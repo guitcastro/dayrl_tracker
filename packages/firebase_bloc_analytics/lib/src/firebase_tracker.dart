@@ -1,6 +1,6 @@
 import 'package:bloc_analytics/bloc_analytics.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
-
+/// Firebase implementation of Tracker
 class FirebaseTracker implements Tracker {
   const FirebaseTracker(this.analytics);
 

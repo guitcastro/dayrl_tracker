@@ -1,6 +1,6 @@
 name: bloc_analytics
-description: Easy integrate you app with multiple analytics tracker
-version: 0.0.1
+description: Easy integrate you app with multiple analytics tracker, integrate with Firebase Analytics, Crashlytics and others
+version: 0.1.0
 author: guitcastro <guilherme.torres.castro@gmail.com>
 homepage: https://github.com/guitcastro/flutter_bloc_analytics
 
