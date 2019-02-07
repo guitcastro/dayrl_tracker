@@ -1,5 +1,4 @@
 class AnalyticsEvent {
-
   const AnalyticsEvent(this.name, this.parameters);
 
   factory AnalyticsEvent.named(String name) => AnalyticsEvent(name, {});

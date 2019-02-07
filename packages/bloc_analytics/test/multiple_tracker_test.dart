@@ -5,7 +5,6 @@ import 'package:mockito/mockito.dart';
 class MockTracker extends Mock implements Tracker {}
 
 void main() {
-
   Tracker subject;
   Tracker tracker1;
   Tracker tracker2;
@@ -24,15 +23,15 @@ void main() {
   });
 
   test('logPageView', () {
-    final pageName ='test';
+    final pageName = 'test';
     subject.logPageView(pageName);
     verify(tracker1.logPageView(pageName));
     verify(tracker2.logPageView(pageName));
   });
 
   test('setUserProperty', () {
-    final property ='key';
-    final value ='value';
+    final property = 'key';
+    final value = 'value';
     subject.setUserProperty(property, value);
     verify(tracker1.setUserProperty(property, value));
     verify(tracker2.setUserProperty(property, value));

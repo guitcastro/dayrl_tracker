@@ -2,7 +2,6 @@ import 'analytics_event.dart';
 import 'tracker.dart';
 
 class MultipleTracker implements Tracker {
-
   const MultipleTracker(this.trackers);
 
   final Iterable<Tracker> trackers;
