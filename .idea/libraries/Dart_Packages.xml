@@ -28,7 +28,7 @@
         <entry key="bloc_analytics">
           <value>
             <list>
-              <option value="/Library/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/bloc_analytics-0.1.0/lib" />
+              <option value="/Library/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/bloc_analytics-0.2.0/lib" />
             </list>
           </value>
         </entry>
@@ -483,7 +483,7 @@
     <CLASSES>
       <root url="file:///Library/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/args-1.5.1/lib" />
       <root url="file:///Library/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.0.8/lib" />
-      <root url="file:///Library/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/bloc_analytics-0.1.0/lib" />
+      <root url="file:///Library/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/bloc_analytics-0.2.0/lib" />
       <root url="file:///Library/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-1.0.4/lib" />
       <root url="file:///Library/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/charcode-1.1.2/lib" />
       <root url="file:///Library/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib" />

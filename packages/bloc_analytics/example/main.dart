@@ -20,7 +20,7 @@ class ExampleTracker implements Tracker {
 void main() {
   final tracker = MultipleTracker([ExampleTracker()]);
   tracker.logEvent(
-      AnalyticsEvent.named('test')..putProperty('propertyName', 'value'));
+      AnalyticsEvent(name: 'test', parameters: {'propertyName': 'value'}));
 
   tracker.logPageView('page');
 

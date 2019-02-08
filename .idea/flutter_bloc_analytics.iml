@@ -3,13 +3,16 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/packages/bloc_analytics/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/packages/bloc_analytics/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/packages/bloc_analytics/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/bloc_analytics/example/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/packages/bloc_analytics/example/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/packages/bloc_analytics/example/build" />
       <excludeFolder url="file://$MODULE_DIR$/packages/firebase_bloc_analytics/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/packages/firebase_bloc_analytics/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/packages/firebase_bloc_analytics/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/firebase_bloc_analytics/example/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/packages/firebase_bloc_analytics/example/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/packages/firebase_bloc_analytics/example/build" />
     </content>

@@ -23,7 +23,7 @@ void main() {
   final tracker =
       MultipleTracker([FirebaseTracker(FirebaseAnalytics()), ExampleTracker()]);
   tracker.logEvent(
-      AnalyticsEvent.named('test')..putProperty('propertyName', 'value'));
+      AnalyticsEvent(name: 'test', parameters: {'propertyName': 'value'}));
 
   tracker.logPageView('page');
 

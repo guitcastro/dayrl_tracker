@@ -16,7 +16,7 @@ void main() {
   });
 
   test('logEvent', () {
-    final event = AnalyticsEvent.named('test');
+    final event = AnalyticsEvent(name: 'test');
     subject.logEvent(event);
     verify(tracker1.logEvent(event));
     verify(tracker2.logEvent(event));
