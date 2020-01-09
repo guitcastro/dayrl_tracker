@@ -7,29 +7,21 @@ class FirebaseTracker implements Tracker {
 
   final FirebaseAnalytics analytics;
 
-  @override
   void logEvent(AnalyticsEvent event) {
     final sanitizedParameters = event.parameters == null
         ? null
         : event.parameters.map((key, value) => MapEntry(_sanitize(key), value));
-    analytics
-        .logEvent(name: _sanitize(event.name), parameters: sanitizedParameters)
-        .then((onValue) => print('Event ${event.name} logged'));
+
+    analytics.logEvent(
+        name: _sanitize(event.name), parameters: sanitizedParameters);
   }
 
-  @override
   void logPageView(String name) {
-    analytics
-        .setCurrentScreen(screenName: _sanitize(name))
-        .then((onValue) => print('PageView $name logged'));
+    analytics.setCurrentScreen(screenName: _sanitize(name));
   }
 
-  @override
   void setUserProperty(String key, Object value) {
-    analytics
-        .setUserProperty(name: _sanitize(key), value: _sanitize(value))
-        .then((onValue) => print('Update user property'));
-    ;
+    analytics.setUserProperty(name: _sanitize(key), value: _sanitize(value));
   }
 
   String _sanitize(final Object value) {

@@ -2,28 +2,31 @@ import 'package:bloc_analytics/bloc_analytics.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_bloc_analytics/src/firebase_tracker.dart';
 
-class ExampleTracker implements Tracker {
-  @override
-  void logEvent(AnalyticsEvent event) {
-    print(event);
-  }
-
-  @override
+class LogTracker implements Tracker {
   void logPageView(String name) {
-    print(name);
+    print('PageView $name logged');
   }
 
-  @override
+  void logEvent(AnalyticsEvent event) {
+    print('Event ${event.name} logged');
+  }
+
   void setUserProperty(String key, Object any) {
-    print(key);
+    print('Update user property $key with value $any.');
   }
 }
 
 void main() {
-  final tracker =
-      MultipleTracker([FirebaseTracker(FirebaseAnalytics()), ExampleTracker()]);
+  final tracker = MultipleTracker(
+    [
+      FirebaseTracker(FirebaseAnalytics()),
+      LogTracker(),
+    ],
+  );
+
   tracker.logEvent(
-      AnalyticsEvent(name: 'test', parameters: {'propertyName': 'value'}));
+    AnalyticsEvent(name: 'test', parameters: {'propertyName': 'value'}),
+  );
 
   tracker.logPageView('page');
 
