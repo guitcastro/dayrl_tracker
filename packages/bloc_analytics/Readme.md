@@ -1,8 +1,8 @@
 # Flutter Bloc Analytics
 
-Use multiple analytics and other trackers in your Application easily 
+Use multiple analytics and other trackers in your Application easily
 
-## Supported trackers:
+## Supported trackers
 
 * Firebase
 
@@ -12,37 +12,37 @@ Use multiple analytics and other trackers in your Application easily
 
 #### Firebase
 
-```
+``` Dart
 final firebaseTracker =  FirebaseAnalytics();
 ```
 
 ### Registering multiple trackers
 
-```
+``` Dart
 MultipleTracker tracker =  MultipleTracker([firebase, crashlytics]);
 ```
 
-### Starting Tracking 
+### Starting Tracking
 
 After all trackers are registered you can just use the multiple tracker to track all events at once
 
 #### Tracking event
 
-```
+``` Dart
 tracker.logEvent(myEvent);
 ```
 
 #### Tracking page view
 
-```
+``` Dart
 tracker.logPageView("page name");
 ```
 
 #### Logging user properties
 
-Avaibles for : Firebase
+Avaibles for: Firebase
 
-```
+``` Dart
 tracker.setUserProperty(Constants.USER_PROPERTY_EMAIL, "example@gmail.com");
 ```
 
@@ -50,3 +50,35 @@ tracker.setUserProperty(Constants.USER_PROPERTY_EMAIL, "example@gmail.com");
 
 In oder to create a custom tracker you just need to implement the `Tracker` interface.
 
+## Login the inputs
+
+In order to log the analytics methods just creat a new tracker.
+
+### LogTracker
+
+``` Dart
+class LogTracker implements Tracker {
+  void logPageView(String name) {
+    print('PageView $name logged');
+  }
+
+  void logEvent(AnalyticsEvent event) {
+    print('Event ${event.name} logged');
+  }
+
+  void setUserProperty(String key, Object any) {
+    print('Update user property $key with value $any.');
+  }
+}
+```
+
+### Register the LogTracker
+
+``` Dart
+MultipleTracker tracker =  MultipleTracker(
+  [
+    firebase,
+    LogTracker(),
+  ]
+);
+```

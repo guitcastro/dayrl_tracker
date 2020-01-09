@@ -1,3 +1,6 @@
-## [0.0.X] - TODO: Add release date.
+# Versions
 
-* TODO: Initial release with Firebase support.
+0.3.0
+
+- Update dependencies
+- Add log example
