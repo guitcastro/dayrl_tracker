@@ -26,6 +26,14 @@ MultipleTracker tracker =  MultipleTracker([firebase, crashlytics]);
 
 After all trackers are registered you can just use the multiple tracker to track all events at once
 
+#### Tracking Login
+
+Available for: Firebase
+
+``` Dart
+tracker.setUserId("97e7d993-745a-455f-aeac-0d04d5f0a035");
+```
+
 #### Tracking event
 
 ``` Dart
@@ -40,10 +48,12 @@ tracker.logPageView("page name");
 
 #### Logging user properties
 
-Avaibles for: Firebase
+Available for: Firebase
 
 ``` Dart
-tracker.setUserProperty(Constants.USER_PROPERTY_EMAIL, "example@gmail.com");
+tracker.setUserProperty(
+  Constants.USER_PROPERTY_EMAIL, "example@gmail.com",
+);
 ```
 
 ## Creating custom tracker
@@ -68,6 +78,10 @@ class LogTracker implements Tracker {
 
   void setUserProperty(String key, Object any) {
     print('Update user property $key with value $any.');
+  }
+
+  void setUserId(String id) {
+    print('The user ID is $id.');
   }
 }
 ```
