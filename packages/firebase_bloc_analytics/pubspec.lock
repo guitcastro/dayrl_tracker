@@ -41,10 +41,10 @@ packages:
     description:
       path: "packages/bloc_analytics"
       ref: update_dependencies
-      resolved-ref: dd6313bf10363f5682d24e856ed85b3d54c59171
+      resolved-ref: de4332cddcc7c75c3e75936ae88afe453ae912bc
       url: "https://github.com/mateusfsilva/flutter_bloc_analytics.git"
     source: git
-    version: "0.3.0"
+    version: "0.4.0"
   boolean_selector:
     dependency: transitive
     description:

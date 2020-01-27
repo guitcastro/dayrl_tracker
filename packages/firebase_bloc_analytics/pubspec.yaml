@@ -1,6 +1,6 @@
 name: firebase_bloc_analytics
 description: Easy integrate you app with multiple analytics tracker, integrate with Firebase Analytics, Crashlytics and others
-version: 0.5.0
+version: 0.6.0
 author: guitcastro <guilherme.torres.castro@gmail.com>
 homepage: https://github.com/guitcastro/flutter_bloc_analytics
 
@@ -12,7 +12,7 @@ dependencies:
     sdk: flutter
 
   firebase_analytics: ^5.0.9
-  #bloc_analytics: ^0.3.0
+  # bloc_analytics: ^0.4.0
   bloc_analytics:
     git:
       url: https://github.com/mateusfsilva/flutter_bloc_analytics.git

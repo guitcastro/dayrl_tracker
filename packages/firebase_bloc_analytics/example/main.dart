@@ -14,6 +14,10 @@ class LogTracker implements Tracker {
   void setUserProperty(String key, Object any) {
     print('Update user property $key with value $any.');
   }
+
+  void setUserId(String id) {
+    print('The user id is $id.');
+  }
 }
 
 void main() {
@@ -23,6 +27,8 @@ void main() {
       LogTracker(),
     ],
   );
+
+  tracker.setUserId("97e7d993-745a-455f-aeac-0d04d5f0a035");
 
   tracker.logEvent(
     AnalyticsEvent(name: 'test', parameters: {'propertyName': 'value'}),
