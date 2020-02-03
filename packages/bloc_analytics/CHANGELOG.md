@@ -2,7 +2,8 @@
 
 0.4.0
 
-- Add login event
+- Add setUserId
+- Update readme
 
 0.3.0
 
