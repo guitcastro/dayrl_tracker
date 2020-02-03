@@ -5,4 +5,5 @@ abstract class Tracker {
   void logPageView(String name);
   void logEvent(AnalyticsEvent event);
   void setUserProperty(String key, Object any);
+  void setUserId(String id);
 }
