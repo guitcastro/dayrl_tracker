@@ -89,36 +89,4 @@ void main() {
 
     verify(analytics.setUserId(id));
   });
-
-  test('logLogin', () {
-    final event = AnalyticsEvent(
-      name: 'login',
-      parameters: {'method': 'value'},
-    );
-
-    subject.logEvent(event);
-
-    verify(
-      analytics.logEvent(
-        name: 'login',
-        parameters: {'method': 'value'},
-      ),
-    );
-  });
-
-  test('logSignUp', () {
-    final event = AnalyticsEvent(
-      name: 'sign_up',
-      parameters: {'method': 'value'},
-    );
-
-    subject.logEvent(event);
-
-    verify(
-      analytics.logEvent(
-        name: 'sign_up',
-        parameters: {'method': 'value'},
-      ),
-    );
-  });
 }

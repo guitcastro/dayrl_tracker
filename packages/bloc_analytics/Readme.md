@@ -26,7 +26,7 @@ MultipleTracker tracker =  MultipleTracker([firebase, crashlytics]);
 
 After all trackers are registered you can just use the multiple tracker to track all events at once
 
-#### Tracking Login
+#### Tracking User ID
 
 Available for: Firebase
 

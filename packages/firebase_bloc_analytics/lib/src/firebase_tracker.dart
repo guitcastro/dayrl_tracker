@@ -31,24 +31,6 @@ class FirebaseTracker implements Tracker {
     );
   }
 
-  void logLogin(String method) {
-    analytics.logEvent(
-      name: 'login',
-      parameters: {
-        'method': _sanitize(method),
-      },
-    );
-  }
-
-  void logSignUp(String method) {
-    analytics.logEvent(
-      name: 'sign_up',
-      parameters: {
-        'method': _sanitize(method),
-      },
-    );
-  }
-
   void setUserId(String id) {
     analytics.setUserId(id);
   }

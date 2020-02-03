@@ -2,7 +2,7 @@
 
 0.6.0
 
-- Add logLogin.
+- Add setUserId.
 
 0.5.0
 
