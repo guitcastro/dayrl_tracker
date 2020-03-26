@@ -8,3 +8,13 @@ build/
 ios/.generated/
 ios/Flutter/Generated.xcconfig
 ios/Runner/GeneratedPluginRegistrant.*
+
+packages/firebase_bloc_analytics/example/.flutter-plugins
+
+packages/firebase_bloc_analytics/example/.flutter-plugins-dependencies
+
+packages/firebase_bloc_analytics/example/android/local.properties
+
+packages/firebase_bloc_analytics/example/ios/Runner/GeneratedPluginRegistrant.h
+
+packages/firebase_bloc_analytics/example/ios/Runner/GeneratedPluginRegistrant.m

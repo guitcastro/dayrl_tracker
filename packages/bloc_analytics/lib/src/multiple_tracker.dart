@@ -18,4 +18,8 @@ class MultipleTracker implements Tracker {
   void setUserProperty(String key, Object any) {
     trackers.forEach((t) => t.setUserProperty(key, any));
   }
+
+  void setUserId(String id) {
+    trackers.forEach((t) => t.setUserId(id));
+  }
 }

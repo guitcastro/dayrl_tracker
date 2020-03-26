@@ -1,14 +1,46 @@
-# firebase_bloc_analytics
+# Firebase Bloc Analytics
 
-A new Flutter package project.
+Use the Firebase Analytics with the package Flutter Bloc Analytics.
 
-## Getting Started
+## Usage instructions
 
-This project is a starting point for a Dart
-[package](https://flutter.io/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+### Registering your tracker
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+``` Dart
+final firebaseAnalytics =  FirebaseAnalytics();
+
+Tracker tracker = FirebaseTracker(firebaseAnalytics);
+```
+
+#### Tracking User ID
+
+``` Dart
+tracker.setUserId("97e7d993-745a-455f-aeac-0d04d5f0a035");
+```
+
+#### Tracking event
+
+``` Dart
+final myEvent = AnalyticsEvent(
+    name: 'login',
+    parameters: {
+      'method': 'Flutter',
+    },
+);
+
+tracker.logEvent(myEvent);
+```
+
+#### Tracking page view
+
+``` Dart
+tracker.logPageView("MyPage");
+```
+
+#### Logging user properties
+
+``` Dart
+tracker.setUserProperty(
+  Constants.USER_PROPERTY_VIP, false,
+);
+```
