@@ -16,7 +16,7 @@ void main() {
   });
 
   test('logEvent', () {
-    final event = AnalyticsEvent(name: 'test');
+    final event = AnalyticsEvent(eventName: 'test');
 
     subject.logEvent(event);
 
