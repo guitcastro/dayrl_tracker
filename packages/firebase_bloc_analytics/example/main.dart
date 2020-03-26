@@ -8,7 +8,7 @@ class LogTracker implements Tracker {
   }
 
   void logEvent(AnalyticsEvent event) {
-    print('Event ${event.name} logged');
+    print('Event ${event.eventName} logged');
   }
 
   void setUserProperty(String key, Object any) {
@@ -31,7 +31,7 @@ void main() {
   tracker.setUserId("97e7d993-745a-455f-aeac-0d04d5f0a035");
 
   tracker.logEvent(
-    AnalyticsEvent(name: 'test', parameters: {'propertyName': 'value'}),
+    AnalyticsEvent(eventName: 'test', parameters: {'propertyName': 'value'}),
   );
 
   tracker.logPageView('page');
