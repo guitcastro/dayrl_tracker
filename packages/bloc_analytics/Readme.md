@@ -12,13 +12,13 @@ Use multiple analytics and other trackers in your Application easily
 
 #### Firebase
 
-``` Dart
+```dart
 final firebaseTracker =  FirebaseAnalytics();
 ```
 
 ### Registering multiple trackers
 
-``` Dart
+```dart
 MultipleTracker tracker =  MultipleTracker([firebase, crashlytics]);
 ```
 
@@ -30,19 +30,19 @@ After all trackers are registered you can just use the multiple tracker to track
 
 Available for: Firebase
 
-``` Dart
+```dart
 tracker.setUserId("97e7d993-745a-455f-aeac-0d04d5f0a035");
 ```
 
 #### Tracking event
 
-``` Dart
+```dart
 tracker.logEvent(myEvent);
 ```
 
 #### Tracking page view
 
-``` Dart
+```dart
 tracker.logPageView("page name");
 ```
 
@@ -50,7 +50,7 @@ tracker.logPageView("page name");
 
 Available for: Firebase
 
-``` Dart
+```dart
 tracker.setUserProperty(
   Constants.USER_PROPERTY_EMAIL, "example@gmail.com",
 );
@@ -66,14 +66,14 @@ In order to log the analytics methods just creat a new tracker.
 
 ### LogTracker
 
-``` Dart
+```dart
 class LogTracker implements Tracker {
   void logPageView(String name) {
     print('PageView $name logged');
   }
 
   void logEvent(AnalyticsEvent event) {
-    print('Event ${event.name} logged');
+    print('Event ${event.eventName} logged');
   }
 
   void setUserProperty(String key, Object any) {
@@ -88,7 +88,7 @@ class LogTracker implements Tracker {
 
 ### Register the LogTracker
 
-``` Dart
+```dart
 MultipleTracker tracker =  MultipleTracker(
   [
     firebase,

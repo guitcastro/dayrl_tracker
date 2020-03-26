@@ -4,12 +4,12 @@ import 'package:meta/meta.dart';
 /// You can either use this direct or implement it in your custom events
 class AnalyticsEvent {
   const AnalyticsEvent({
-    @required this.name,
+    @required this.eventName,
     this.parameters,
   });
 
   /// Analytics event name
-  final String name;
+  final String eventName;
 
   /// Analytics event properties
   final Map<String, dynamic> parameters;
