@@ -22,7 +22,7 @@ tracker.setUserId("97e7d993-745a-455f-aeac-0d04d5f0a035");
 
 ``` Dart
 final myEvent = AnalyticsEvent(
-    name: 'login',
+    eventName: 'login',
     parameters: {
       'method': 'Flutter',
     },

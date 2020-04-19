@@ -13,7 +13,7 @@ class FirebaseTracker implements Tracker {
         : event.parameters.map((key, value) => MapEntry(_sanitize(key), value));
 
     analytics.logEvent(
-      name: _sanitize(event.name),
+      name: _sanitize(event.eventName),
       parameters: sanitizedParameters,
     );
   }

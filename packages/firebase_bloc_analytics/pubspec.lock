@@ -40,11 +40,11 @@ packages:
     dependency: "direct main"
     description:
       path: "packages/bloc_analytics"
-      ref: update_dependencies
-      resolved-ref: de4332cddcc7c75c3e75936ae88afe453ae912bc
+      ref: parameter_name
+      resolved-ref: a723c399c2bb107321e8dc67e0bb46b1a0f1f643
       url: "https://github.com/mateusfsilva/flutter_bloc_analytics.git"
     source: git
-    version: "0.4.0"
+    version: "0.5.0"
   boolean_selector:
     dependency: transitive
     description:
@@ -100,7 +100,7 @@ packages:
       name: firebase_analytics
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "5.0.9"
+    version: "5.0.11"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -461,4 +461,4 @@ packages:
     version: "2.2.0"
 sdks:
   dart: ">=2.7.0 <3.0.0"
-  flutter: ">=1.10.0 <2.0.0"
+  flutter: ">=1.12.13+hotfix.4 <2.0.0"

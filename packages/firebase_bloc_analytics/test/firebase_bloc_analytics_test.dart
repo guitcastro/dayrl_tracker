@@ -51,7 +51,7 @@ void main() {
 
   test('logEvent', () {
     final event = AnalyticsEvent(
-      name: 'test event',
+      eventName: 'test event',
       parameters: {'test parameter': 'value'},
     );
 
